@@ -6,14 +6,21 @@
 #include <allegro5/allegro_image.h>
 #include "potatoes.h"
 
-void printTitle(ALLEGRO_FONT *font){
+void loadMenu(){
 
-    char title[5] = "TEST";
+    al_clear_to_color(BACKGROUND);
+    ALLEGRO_BITMAP *buffer = al_create_bitmap(1280, 800);
+    ALLEGRO_BITMAP *menu1 = al_load_bitmap("menu1.jpg");
+    ALLEGRO_BITMAP *menu2 = al_load_bitmap("menu2.jpg");
+    ALLEGRO_BITMAP *menu3 = al_load_bitmap("menu3.jpg");
+    ALLEGRO_BITMAP *menu4 = al_load_bitmap("menu4.jpg");
 
-    //print Monarch title
-    al_draw_text(font, FOREGROUND, COL_1, 5, ALLEGRO_ALIGN_CENTER, title);
+    al_draw_bitmap(menu1, 0,0,0);
+
 
 
 }
+
+
 
 

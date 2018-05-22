@@ -33,6 +33,7 @@
 		</Compiler>
 		<Unit filename="allegroCheck.cpp" />
 		<Unit filename="allegroGraphics.cpp" />
+		<Unit filename="allegroInput.cpp" />
 		<Unit filename="potatoMain.cpp" />
 		<Unit filename="potatoes.h" />
 		<Extensions>

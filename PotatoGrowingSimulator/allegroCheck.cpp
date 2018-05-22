@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_font.h>
-#include <allegro5/allegro_ttf.h>                       // For allegro, must be in compiler search path.
+#include <allegro5/allegro_ttf.h>
 #include <allegro5/allegro_native_dialog.h>
 #include <allegro5/allegro_image.h>
 #include "potatoes.h"
@@ -42,6 +42,11 @@ int checkSetup(ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font){
     		"Failed to initialize image addon!", nullptr, ALLEGRO_MESSAGEBOX_ERROR);
     	return -1;
 	}
+	if (!al_install_keyboard()) {
+	    al_show_native_message_box(display, "Error", "Error", "failed to initialize the keyboard!",
+                                 nullptr, ALLEGRO_MESSAGEBOX_ERROR);
+      	return -1;
+   	}
 
     printf("Add-ons initialized successfully\n");
 

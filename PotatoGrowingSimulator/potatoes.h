@@ -22,5 +22,6 @@ struct Vitals {
 
 void initializeAllegro();
 int checkSetup(ALLEGRO_DISPLAY *display, ALLEGRO_FONT *font);
-void printTitle(ALLEGRO_FONT *font);
+void loadMenu();
+void moveMark();
 

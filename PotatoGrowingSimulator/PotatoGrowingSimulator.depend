@@ -6,7 +6,7 @@
 	<allegro5/allegro_ttf.h>
 	<allegro5/allegro_native_dialog.h>
 
-1526322621 source:p:\ics3u\potato\potato-growing-simulator\potatogrowingsimulator\potatomain.cpp
+1526668450 source:p:\ics3u\potato\potato-growing-simulator\potatogrowingsimulator\potatomain.cpp
 	<stdio.h>
 	<allegro5/allegro.h>
 	<allegro5/allegro_font.h>
@@ -15,7 +15,7 @@
 	<allegro5/allegro_image.h>
 	"potatoes.h"
 
-1526321851 p:\ics3u\potato\potato-growing-simulator\potatogrowingsimulator\potatoes.h
+1526668204 p:\ics3u\potato\potato-growing-simulator\potatogrowingsimulator\potatoes.h
 
 1526321832 source:p:\ics3u\potato\potato-growing-simulator\potatogrowingsimulator\potatoallegro.cpp
 	<stdio.h>
@@ -25,7 +25,7 @@
 	<allegro5/allegro_native_dialog.h>
 	"potatoes.h"
 
-1526323028 source:p:\ics3u\potato\potato-growing-simulator\potatogrowingsimulator\allegrocheck.cpp
+1526585188 source:p:\ics3u\potato\potato-growing-simulator\potatogrowingsimulator\allegrocheck.cpp
 	<stdio.h>
 	<allegro5/allegro.h>
 	<allegro5/allegro_font.h>
@@ -34,7 +34,16 @@
 	<allegro5/allegro_image.h>
 	"potatoes.h"
 
-1526322952 source:p:\ics3u\potato\potato-growing-simulator\potatogrowingsimulator\allegrographics.cpp
+1526668715 source:p:\ics3u\potato\potato-growing-simulator\potatogrowingsimulator\allegrographics.cpp
+	<stdio.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_image.h>
+	"potatoes.h"
+
+1526667569 source:p:\ics3u\potato\potato-growing-simulator\potatogrowingsimulator\allegroinput.cpp
 	<stdio.h>
 	<allegro5/allegro.h>
 	<allegro5/allegro_font.h>
