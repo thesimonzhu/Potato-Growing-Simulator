@@ -18,10 +18,12 @@ int main(int argc, char *argv[]) {
     ALLEGRO_DISPLAY *display = al_create_display(SCREEN_W, SCREEN_H);
     ALLEGRO_FONT *font = al_load_ttf_font("quantico.regular.ttf", 100, 50);
     ALLEGRO_EVENT_QUEUE *event_queue= al_create_event_queue();
+    ALLEGRO_TIMER *timer =al_create_timer(2.0)
     al_install_keyboard();
 
 	al_register_event_source(event_queue, al_get_keyboard_event_source());
 	al_register_event_source(event_queue, al_get_display_event_source(display));
+	al_register_event_source(queue, al_get_timer_event_source(timer));
 
 
 
@@ -32,10 +34,7 @@ int main(int argc, char *argv[]) {
 	al_set_window_title(display, "The Martian: Potato Growing Simulator");
 
 
-
-
-
-
+    al_start_timer(timer);
 
 	while (running) {
         al_clear_to_color(BACKGROUND);
@@ -48,10 +47,26 @@ int main(int argc, char *argv[]) {
 
 		al_wait_for_event(event_queue, &event);
 
+
+        if (event.type == ALLEGRO_EVENT_TIMER) {
+			printBars();
+
+        }
+
+
 		if (event.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
 			running = false;
 
-	}
+        }
+        do
+            {
+            ALLEGRO_EVENT event;
+            al_wait_for_event(queue, &event);
+
+            if (event.type == ALLEGRO_EVENT_TIMER){
+                 int oxygen (oxl, ALLEGRO_EVENT_QUEUE *event_queue);
+                 int printHealthBars ();
+            }
 
     // Free up memory taken by display.
     al_destroy_display(display);
@@ -64,3 +79,7 @@ int main(int argc, char *argv[]) {
 
 
 }
+
+
+
+
